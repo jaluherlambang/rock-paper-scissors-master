@@ -9,7 +9,6 @@
 1. Clone the repo.
 ```sh
 $ git clone https://github.com/jaluherlambang/rock-paper-scissors-master.git
-$ cd rock-paper-scissors
 ```
 
 2. Install the dependencies
