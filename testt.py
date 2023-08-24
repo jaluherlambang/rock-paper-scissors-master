@@ -1,6 +1,6 @@
+import tensorflow as tf
 import cv2
 import numpy as np
-from keras.models import load_model
 
 REV_CLASS_MAP = {
     0: "rock",
@@ -13,7 +13,7 @@ def mapper(val):
     return REV_CLASS_MAP[val]
 
 # Load the trained model
-model = load_model("rock-paper-scissors-model-2.h5")
+model = tf.keras.models.load_model("rock-paper-scissors-model.h5")
 
 # Function to preprocess the input image
 def preprocess_image(image):
