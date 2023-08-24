@@ -69,4 +69,4 @@ plt.title('Training and validation loss')
 plt.legend()
 
 plt.show()
-#model.save("rock-paper-scissors-model.h5")
+model.save("rock-paper-scissors-model.h5")
