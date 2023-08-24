@@ -51,10 +51,10 @@ while True:
     if count == num_samples:
         break
 
-    cv2.rectangle(frame, (100, 100), (500, 500), (255, 255, 255), 2)
+    cv2.rectangle(frame, (20, 150), (220, 350), (255, 255, 255), 2)
 
     if start:
-        roi = frame[100:500, 100:500]
+        roi = frame[20:220, 150:350]
         save_path = os.path.join(IMG_CLASS_PATH, '{}.jpg'.format(count + 1))
         cv2.imwrite(save_path, roi)
         count += 1
@@ -65,7 +65,7 @@ while True:
     cv2.imshow("Collecting images", frame)
 
     k = cv2.waitKey(10)
-    if k == ord('a'):
+    if k == ord('s'):
         start = not start
 
     if k == ord('q'):
